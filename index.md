@@ -14,9 +14,9 @@ title: deep thinking hour
 
 </head>
 
-  <body class="text-emerald-950 font-dm text-lg bg-violet-500 bg-gradient-to-r from-violet-500 to-emerald-300 tracking-tighter overscroll-contain">
+  <body class="relative flex flex-col items-center text-emerald-950 font-dm text-sm xl:text-lg bg-violet-500 bg-gradient-to-r from-violet-500 to-emerald-300 tracking-tighter overscroll-contain">
 
-    <header class="relative flex flex-row items-center justify-between h-24 mt-16 mx-64">
+    <header class="relative flex flex-row items-center w-full justify-between h-24 mt-8 xl:mt-16 mx-8 xl:mx-64 max-w-lg xl:max-w-5xl">
       <div class="flex flex-row">
         <!-- <p class="text-4xl font-black -tracking-widest px-2">dth</p> -->
         <div class="flex flex-col text-4xl -space-y-2 font-bold">
@@ -27,52 +27,50 @@ title: deep thinking hour
       </div>
 
       <!-- sponsors -->
-      <div class="flex flex-row space-x-4 uppercase font-light">
-        <div class="flex flex-row items-center justify-center h-16">
-          <!--          <img src="/assets/images/github.png" alt="GitHub" class="w-16 h-16">-->
-                    <p>VISLab</p>
-                  </div>
-        <div class="flex flex-row items-center justify-center h-16">
-<!--          <img src="/assets/images/github.png" alt="GitHub" class="w-16 h-16">-->
-          <p>University of Amsterdam</p>
+      <div class="flex flex-col space-y-2 xl:space-y-0 xl:flex-row xl:space-x-4 uppercase font-light">
+        <div class="flex flex-row items-center justify-center">
+          <a href="https://ivi.fnwi.uva.nl/vislab/"><img src="/assets/images/vislab-logo-small-bw.png" alt="VISLab" class="w-6 h-6 xl:w-12 xl:h-12"></a>
         </div>
-        <div class="flex flex-row items-center justify-center h-16">
-<!--          <img src="/assets/images/github.png" alt="GitHub" class="w-16 h-16">-->
-          <p>ELLIS</p>
+        <div class="flex flex-row items-center justify-center">
+          <a href="https://www.uva.nl/en"><img src="/assets/images/uva-logo-bw-small.png" alt="UvA" class="w-6 h-6 xl:w-12 xl:h-12"></a>
+        </div>
+        <div class="flex flex-row items-center justify-center">
+          <a href="https://ellis.eu/"><img src="/assets/images/ellis-bw.png" alt="ELLIS" class="w-6 h-6 w-12 h-12"></a>
         </div>
       </div>
     </header>
 
-    <hr class="mx-64 border-b-2 border-neutral-800 rounded-md">
+    <hr class="w-full mx-8 xl:mx-64 border-b-2 border-neutral-800 rounded-md max-w-lg xl:max-w-5xl">
 
     <!-- hero -->
-    <div class="flex flex-col justify-center mx-64 my-24 space-y-4">
-      <p class="text-7xl font-black">a series of talks on Deep Learning by experts from industry and academia</p>
-      <p class="text-2xl font-extralight font-serif italic">hosted at university of amsterdam</p>
+    <div class="w-full flex flex-col justify-center mx-8 my-12 xl:mx-64 xl:my-24 space-y-4 max-w-lg xl:max-w-5xl">
+      <p class="text-4xl xl:text-7xl font-black">a series of talks on Deep Learning by experts from industry and academia</p>
+      <p class="text-xl xl:text-2xl font-extralight font-serif italic">hosted at university of amsterdam</p>
     </div>
 
-    <hr class="mx-64 border-b-2 border-neutral-800  rounded-md">
+    <hr class="w-full mx-4 xl:mx-64 border-b-2 border-neutral-800 rounded-md max-w-lg xl:max-w-5xl">
 
-    <div class="flex flex-col mx-64 my-8 justify-between">
+    <div class="w-full flex flex-col mx-8 xl:mx-64 my-8 justify-between max-w-lg xl:max-w-5xl">
       <p class="text-xl font-black">upcoming events</p>
 
       <!-- events container -->
-      <div class="flex flex-col space-y-24">
+      <div class="flex flex-col xl:space-y-24">
 
-        {% include_relative _events/past/rianne-vd-berg.html %}
+        {% include_relative _events/upcoming/phillip-lippe.html %}
 
       </div>
       <!-- event container end -->
 
     </div>
 
-    <div class="flex flex-col mx-64 my-8 justify-between">
+    <div class="w-full flex flex-col mx-8 xl:mx-64 my-8 justify-between max-w-lg xl:max-w-5xl">
       <p class="text-xl font-black">past events</p>
 
       <!-- events container -->
       <div class="flex flex-col space-y-24">
 
         {% include_relative _events/past/rianne-vd-berg.html %}
+        {% include_relative _events/past/david-ruhe.html %}
         {% include_relative _events/past/panel-model-v-scale.html %}
 
 
@@ -82,9 +80,20 @@ title: deep thinking hour
     </div>
 
     <!-- content -->
-    <div class="flex flex-col items-center justify-center">
-    </div>
+    <div class="w-full flex flex-col xl:flex-row justify-between px-8 py-8 mt-4 xl:px-64 xl:py-24 xl:mt-12 text-sm bg-opacity-10 bg-white ">
+      
+      <div class="flex flex-col mb-8">
+          <p class="font-black">organisers</p>
+          <p class="font-md">Samuele Papa <a class="ml-2 font-normal underline" href="mailto:s.papa@uva.nl">s.papa@uva.nl</a></p>
+          <p class="font-md">Riccardo Valperga<a class="ml-2 font-normal underline"  href="mailto:r.valperga@uva.nl">r.valperga@uva.nl</a></p>
+          <p class="font-md">David Knigge<a class="ml-2 font-normal underline" href="mailto:d.m.knigge@uva.nl@uva.nl">d.m.knigge@uva.nl</a></p>
+      </div>
 
+      <div class="flex flex-col max-w-xs">
+        <p> The Deep Thinking Hour is a series of talks and panel discussions on advancements in Deep Learning, hosted at the University of Amsterdam. This initiative is supported by ELLIS. </p>
+      </div>
+
+    </div>
 
   </body>
 
