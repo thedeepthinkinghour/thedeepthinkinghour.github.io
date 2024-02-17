@@ -1,5 +1,4 @@
 ---
-title: deep thinking hour
 ---
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 <head>
