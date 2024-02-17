@@ -16,7 +16,7 @@
 
 </head>
 
-  <body class="relative flex flex-col items-center text-emerald-950 font-dm text-sm xl:text-lg bg-violet-500 bg-gradient-to-r from-violet-500 to-emerald-300 tracking-tighter overscroll-contain">
+  <body class="p-4 relative flex flex-col items-center text-emerald-950 font-dm text-sm xl:text-lg bg-violet-500 bg-gradient-to-r from-violet-500 to-emerald-300 tracking-tighter overscroll-contain">
 
     <header class="relative flex flex-row items-center w-full justify-between h-24 mt-8 xl:mt-16 mx-8 xl:mx-64 max-w-lg xl:max-w-5xl">
       <div class="flex flex-row">
@@ -52,11 +52,11 @@
 
     <hr class="w-full mx-4 xl:mx-64 border-b-2 border-neutral-800 rounded-md max-w-lg xl:max-w-5xl">
 
-    <div class="w-full flex flex-col mx-8 xl:mx-64 my-8 justify-between max-w-lg xl:max-w-5xl">
-      <p class="text-xl font-black">upcoming events</p>
+    <div class="w-full flex flex-col mx-8 xl:mx-64 my-8 max-w-lg xl:max-w-5xl">
+      <p class="text-xl mb-20 font-black">upcoming events</p>
 
       <!-- events container -->
-      <div class="flex flex-col xl:space-y-24">
+      <div class="flex flex-col space-y-24">
 
         {% include_relative _events/upcoming/phillip-lippe.html %}
 
@@ -65,8 +65,8 @@
 
     </div>
 
-    <div class="w-full flex flex-col mx-8 xl:mx-64 my-8 justify-between max-w-lg xl:max-w-5xl">
-      <p class="text-xl font-black">past events</p>
+    <div class="w-full flex flex-col mx-8 xl:mx-64 my-8 max-w-lg xl:max-w-5xl">
+      <p class="text-xl mb-20 font-black">past events</p>
 
       <!-- events container -->
       <div class="flex flex-col space-y-24">
@@ -74,7 +74,6 @@
         {% include_relative _events/past/rianne-vd-berg.html %}
         {% include_relative _events/past/david-ruhe.html %}
         {% include_relative _events/past/panel-model-v-scale.html %}
-
 
       </div>
       <!-- event container end -->
