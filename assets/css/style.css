@@ -646,16 +646,8 @@ video {
   height: 6rem;
 }
 
-.h-6 {
-  height: 1.5rem;
-}
-
 .w-12 {
   width: 3rem;
-}
-
-.w-6 {
-  width: 1.5rem;
 }
 
 .w-full {
@@ -710,10 +702,10 @@ video {
   margin-bottom: calc(-0.5rem * var(--tw-space-y-reverse));
 }
 
-.space-y-2 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+.space-x-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-y-24 > :not([hidden]) ~ :not([hidden]) {
@@ -726,12 +718,6 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
-}
-
-.space-x-1 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.25rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .overscroll-contain {
@@ -955,24 +941,8 @@ video {
     margin-top: 4rem;
   }
 
-  .xl\:h-12 {
-    height: 3rem;
-  }
-
-  .xl\:h-16 {
-    height: 4rem;
-  }
-
   .xl\:h-20 {
     height: 5rem;
-  }
-
-  .xl\:w-12 {
-    width: 3rem;
-  }
-
-  .xl\:w-16 {
-    width: 4rem;
   }
 
   .xl\:w-20 {
@@ -1000,12 +970,6 @@ video {
     --tw-space-x-reverse: 0;
     margin-right: calc(1rem * var(--tw-space-x-reverse));
     margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .xl\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
   .xl\:p-8 {
